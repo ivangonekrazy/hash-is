@@ -20,7 +20,7 @@ func HandleConnection(conn net.Conn) {
 	}
 
 	sha1Hash := sha1.New()
-	sha1Hash.Write([]byte(strings.TrimSpacequeryStr)))
+	sha1Hash.Write([]byte(strings.TrimSpace(queryStr)))
 	hashedStr := fmt.Sprintf("%x", sha1Hash.Sum(nil))
 
 	writer := bufio.NewWriter(conn)
